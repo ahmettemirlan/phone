@@ -1,0 +1,492 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/2/6</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 15 13:35:13 ALMT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6319 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.setUp()'><b>setUp</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td><div><pre>org.dbunit.dataset.DataSetException: java.net.MalformedURLException
+	at org.dbunit.dataset.xml.FlatXmlProducer.produce(FlatXmlProducer.java:169)
+	at org.dbunit.dataset.CachedDataSet.&lt;init&gt;(CachedDataSet.java:71)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:200)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:187)
+	at com.websystique.springmvc.dao.EmployeeDaoImplTest.getDataSet(EmployeeDaoImplTest.java:22)
+	at com.websystique.springmvc.dao.EntityDaoImplTest.setUp(EntityDaoImplTest.java:27)
+java.net.MalformedURLException
+	at java.net.URL.&lt;init&gt;(URL.java:619)
+	at java.net.URL.&lt;init&gt;(URL.java:482)
+	at java.net.URL.&lt;init&gt;(URL.java:431)
+	at org.apache.xerces.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.dbunit.dataset.xml.FlatXmlProducer.produce(FlatXmlProducer.java:145)
+	at org.dbunit.dataset.CachedDataSet.&lt;init&gt;(CachedDataSet.java:71)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:200)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:187)
+	at com.websystique.springmvc.dao.EmployeeDaoImplTest.getDataSet(EmployeeDaoImplTest.java:22)
+	at com.websystique.springmvc.dao.EntityDaoImplTest.setUp(EntityDaoImplTest.java:27)
+Caused by: java.lang.NullPointerException
+	at java.net.URL.&lt;init&gt;(URL.java:524)
+	... 50 more
+... Removed 72 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7891229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7891229'><pre>org.dbunit.dataset.DataSetException: java.net.MalformedURLException
+	at org.dbunit.dataset.xml.FlatXmlProducer.produce(FlatXmlProducer.java:169)
+	at org.dbunit.dataset.CachedDataSet.&lt;init&gt;(CachedDataSet.java:71)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:200)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:187)
+	at com.websystique.springmvc.dao.EmployeeDaoImplTest.getDataSet(EmployeeDaoImplTest.java:22)
+	at com.websystique.springmvc.dao.EntityDaoImplTest.setUp(EntityDaoImplTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:601)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+java.net.MalformedURLException
+	at java.net.URL.&lt;init&gt;(URL.java:619)
+	at java.net.URL.&lt;init&gt;(URL.java:482)
+	at java.net.URL.&lt;init&gt;(URL.java:431)
+	at org.apache.xerces.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.dbunit.dataset.xml.FlatXmlProducer.produce(FlatXmlProducer.java:145)
+	at org.dbunit.dataset.CachedDataSet.&lt;init&gt;(CachedDataSet.java:71)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:200)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:187)
+	at com.websystique.springmvc.dao.EmployeeDaoImplTest.getDataSet(EmployeeDaoImplTest.java:22)
+	at com.websystique.springmvc.dao.EntityDaoImplTest.setUp(EntityDaoImplTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:601)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.NullPointerException
+	at java.net.URL.&lt;init&gt;(URL.java:524)
+	... 50 more
+</pre></div></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.setUp()'><b>setUp</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.setUp()'><b>setUp</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.setUp()'><b>setUp</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.setUp()'><b>setUp</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.setUp()'><b>setUp</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.websystique.springmvc.controller.AppControllerTest.listEmployees()'><b>listEmployees</b><br>Test class: com.websystique.springmvc.controller.AppControllerTest</td>
+<td><div><pre>java.lang.AssertionError: expected [[Employee [id=1, name=Temirlan, phone=554362, city=Astana, address=Almaty 17], Employee [id=2, name=Duman, phone=995541, city=Astana, address=null]]] but found [null]
+	at com.websystique.springmvc.controller.AppControllerTest.listEmployees(AppControllerTest.java:62)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace245029416", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace245029416'><pre>java.lang.AssertionError: expected [[Employee [id=1, name=Temirlan, phone=554362, city=Astana, address=Almaty 17], Employee [id=2, name=Duman, phone=995541, city=Astana, address=null]]] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at com.websystique.springmvc.controller.AppControllerTest.listEmployees(AppControllerTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>com.websystique.springmvc.controller.AppControllerTest@3ed854d8</td></tr>
+<tr>
+<td title='com.websystique.springmvc.controller.AppControllerTest.saveEmployeeWithSuccess()'><b>saveEmployeeWithSuccess</b><br>Test class: com.websystique.springmvc.controller.AppControllerTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Employee Axel registered successfully] but found [Employee Temirlan registered successfully]
+	at com.websystique.springmvc.controller.AppControllerTest.saveEmployeeWithSuccess(AppControllerTest.java:96)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1769399458", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1769399458'><pre>java.lang.AssertionError: expected [Employee Axel registered successfully] but found [Employee Temirlan registered successfully]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at com.websystique.springmvc.controller.AppControllerTest.saveEmployeeWithSuccess(AppControllerTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>com.websystique.springmvc.controller.AppControllerTest@3ed854d8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.websystique.springmvc.controller.AppControllerTest.deleteEmployee()'><b>deleteEmployee</b><br>Test class: com.websystique.springmvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.controller.AppControllerTest@3ed854d8</td></tr>
+<tr>
+<td title='com.websystique.springmvc.service.EmployeeServiceImplTest.deleteEmployeeBySsn()'><b>deleteEmployeeBySsn</b><br>Test class: com.websystique.springmvc.service.EmployeeServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.service.EmployeeServiceImplTest@f31d024</td></tr>
+<tr>
+<td title='com.websystique.springmvc.controller.AppControllerTest.editEmployee()'><b>editEmployee</b><br>Test class: com.websystique.springmvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.controller.AppControllerTest@3ed854d8</td></tr>
+<tr>
+<td title='com.websystique.springmvc.service.EmployeeServiceImplTest.findAllEmployees()'><b>findAllEmployees</b><br>Test class: com.websystique.springmvc.service.EmployeeServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.service.EmployeeServiceImplTest@f31d024</td></tr>
+<tr>
+<td title='com.websystique.springmvc.service.EmployeeServiceImplTest.findById()'><b>findById</b><br>Test class: com.websystique.springmvc.service.EmployeeServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.service.EmployeeServiceImplTest@f31d024</td></tr>
+<tr>
+<td title='com.websystique.springmvc.service.EmployeeServiceImplTest.findEmployeeBySsn()'><b>findEmployeeBySsn</b><br>Test class: com.websystique.springmvc.service.EmployeeServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.service.EmployeeServiceImplTest@f31d024</td></tr>
+<tr>
+<td title='com.websystique.springmvc.service.EmployeeServiceImplTest.isEmployeeSsnUnique()'><b>isEmployeeSsnUnique</b><br>Test class: com.websystique.springmvc.service.EmployeeServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.service.EmployeeServiceImplTest@f31d024</td></tr>
+<tr>
+<td title='com.websystique.springmvc.controller.AppControllerTest.newEmployee()'><b>newEmployee</b><br>Test class: com.websystique.springmvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.controller.AppControllerTest@3ed854d8</td></tr>
+<tr>
+<td title='com.websystique.springmvc.service.EmployeeServiceImplTest.saveEmployee()'><b>saveEmployee</b><br>Test class: com.websystique.springmvc.service.EmployeeServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.service.EmployeeServiceImplTest@f31d024</td></tr>
+<tr>
+<td title='com.websystique.springmvc.controller.AppControllerTest.saveEmployeeWithValidationError()'><b>saveEmployeeWithValidationError</b><br>Test class: com.websystique.springmvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.controller.AppControllerTest@3ed854d8</td></tr>
+<tr>
+<td title='com.websystique.springmvc.controller.AppControllerTest.saveEmployeeWithValidationErrorNonUniqueSSN()'><b>saveEmployeeWithValidationErrorNonUniqueSSN</b><br>Test class: com.websystique.springmvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.controller.AppControllerTest@3ed854d8</td></tr>
+<tr>
+<td title='com.websystique.springmvc.service.EmployeeServiceImplTest.updateEmployee()'><b>updateEmployee</b><br>Test class: com.websystique.springmvc.service.EmployeeServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.service.EmployeeServiceImplTest@f31d024</td></tr>
+<tr>
+<td title='com.websystique.springmvc.controller.AppControllerTest.updateEmployeeWithSuccess()'><b>updateEmployeeWithSuccess</b><br>Test class: com.websystique.springmvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.controller.AppControllerTest@3ed854d8</td></tr>
+<tr>
+<td title='com.websystique.springmvc.controller.AppControllerTest.updateEmployeeWithValidationError()'><b>updateEmployeeWithValidationError</b><br>Test class: com.websystique.springmvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.controller.AppControllerTest@3ed854d8</td></tr>
+<tr>
+<td title='com.websystique.springmvc.controller.AppControllerTest.updateEmployeeWithValidationErrorNonUniqueSSN()'><b>updateEmployeeWithValidationErrorNonUniqueSSN</b><br>Test class: com.websystique.springmvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.controller.AppControllerTest@3ed854d8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.deleteEmployeeByInvalidSsn()'><b>deleteEmployeeByInvalidSsn</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.deleteEmployeeBySsn()'><b>deleteEmployeeBySsn</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.findAllEmployees()'><b>findAllEmployees</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.findById()'><b>findById</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.findEmployeeBySsn()'><b>findEmployeeBySsn</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+<tr>
+<td title='com.websystique.springmvc.dao.EmployeeDaoImplTest.saveEmployee()'><b>saveEmployee</b><br>Test class: com.websystique.springmvc.dao.EmployeeDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e</td></tr>
+</table><p>
+</body>
+</html>

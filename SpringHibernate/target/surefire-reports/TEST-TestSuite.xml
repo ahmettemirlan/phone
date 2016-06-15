@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="3" time="8.357" errors="0" skipped="16" tests="34" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\bin"/>
+    <property name="java.vm.version" value="24.79-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\ChesSter\Desktop\SpringHibernateExample1\SpringHibernate"/>
+    <property name="java.runtime.version" value="1.7.0_79-b15"/>
+    <property name="netbeans.deploy" value="true"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_79\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ChesSter\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.1\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\PROGRA~2\Borland\CBUILD~1\Bin;C:\PROGRA~2\Borland\CBUILD~1\Projects\Bpl;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MATLAB\R2016a\bin;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MATLAB\R2010a\runtime\win64;C:\Program Files\MATLAB\R2010a\bin;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\modeltech64_10.1c\win64;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\ChesSter"/>
+    <property name="user.timezone" value="Asia/Almaty"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="ChesSter"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.1\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_79\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dnetbeans.deploy=true -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_79"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_79\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_79\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.1\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.169" classname="com.websystique.springmvc.controller.AppControllerTest" name="deleteEmployee"/>
+  <testcase time="0" classname="com.websystique.springmvc.controller.AppControllerTest" name="editEmployee"/>
+  <testcase time="0.01" classname="com.websystique.springmvc.controller.AppControllerTest" name="listEmployees">
+    <failure message="expected [[Employee [id=1, name=Temirlan, phone=554362, city=Astana, address=Almaty 17], Employee [id=2, name=Duman, phone=995541, city=Astana, address=null]]] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: expected [[Employee [id=1, name=Temirlan, phone=554362, city=Astana, address=Almaty 17], Employee [id=2, name=Duman, phone=995541, city=Astana, address=null]]] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at com.websystique.springmvc.controller.AppControllerTest.listEmployees(AppControllerTest.java:62)
+</failure>
+  </testcase>
+  <testcase time="0" classname="com.websystique.springmvc.controller.AppControllerTest" name="newEmployee"/>
+  <testcase time="0.002" classname="com.websystique.springmvc.controller.AppControllerTest" name="saveEmployeeWithSuccess">
+    <failure message="expected [Employee Axel registered successfully] but found [Employee Temirlan registered successfully]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Employee Axel registered successfully] but found [Employee Temirlan registered successfully]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at com.websystique.springmvc.controller.AppControllerTest.saveEmployeeWithSuccess(AppControllerTest.java:96)
+</failure>
+  </testcase>
+  <testcase time="0" classname="com.websystique.springmvc.controller.AppControllerTest" name="saveEmployeeWithValidationError"/>
+  <testcase time="0.011" classname="com.websystique.springmvc.controller.AppControllerTest" name="saveEmployeeWithValidationErrorNonUniqueSSN"/>
+  <testcase time="0" classname="com.websystique.springmvc.controller.AppControllerTest" name="updateEmployeeWithSuccess"/>
+  <testcase time="0" classname="com.websystique.springmvc.controller.AppControllerTest" name="updateEmployeeWithValidationError"/>
+  <testcase time="0" classname="com.websystique.springmvc.controller.AppControllerTest" name="updateEmployeeWithValidationErrorNonUniqueSSN"/>
+  <testcase time="5.423" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="setUp">
+    <failure message="java.net.MalformedURLException" type="org.dbunit.dataset.DataSetException">org.dbunit.dataset.DataSetException: java.net.MalformedURLException
+	at org.dbunit.dataset.xml.FlatXmlProducer.produce(FlatXmlProducer.java:169)
+	at org.dbunit.dataset.CachedDataSet.&lt;init&gt;(CachedDataSet.java:71)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:200)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:187)
+	at com.websystique.springmvc.dao.EmployeeDaoImplTest.getDataSet(EmployeeDaoImplTest.java:22)
+	at com.websystique.springmvc.dao.EntityDaoImplTest.setUp(EntityDaoImplTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:601)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+java.net.MalformedURLException
+	at java.net.URL.&lt;init&gt;(URL.java:619)
+	at java.net.URL.&lt;init&gt;(URL.java:482)
+	at java.net.URL.&lt;init&gt;(URL.java:431)
+	at org.apache.xerces.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.dbunit.dataset.xml.FlatXmlProducer.produce(FlatXmlProducer.java:145)
+	at org.dbunit.dataset.CachedDataSet.&lt;init&gt;(CachedDataSet.java:71)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:200)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:187)
+	at com.websystique.springmvc.dao.EmployeeDaoImplTest.getDataSet(EmployeeDaoImplTest.java:22)
+	at com.websystique.springmvc.dao.EntityDaoImplTest.setUp(EntityDaoImplTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:601)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.NullPointerException
+	at java.net.URL.&lt;init&gt;(URL.java:524)
+	... 50 more
+Caused by: java.lang.NullPointerException
+	at java.net.URL.&lt;init&gt;(URL.java:524)
+	... 50 more
+</failure>
+    <system-err>июн 15, 2016 1:35:15 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@4b3e427e: startup date [Wed Jun 15 13:35:15 ALMT 2016]; root of context hierarchy
+июн 15, 2016 1:35:16 PM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+INFO: Loaded JDBC driver: org.h2.Driver
+июн 15, 2016 1:35:16 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+июн 15, 2016 1:35:16 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.6.Final}
+июн 15, 2016 1:35:16 PM org.hibernate.cfg.Environment &lt;clinit&gt;
+INFO: HHH000206: hibernate.properties not found
+июн 15, 2016 1:35:16 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+июн 15, 2016 1:35:17 PM org.hibernate.dialect.Dialect &lt;init&gt;
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+июн 15, 2016 1:35:18 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
+июн 15, 2016 1:35:19 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+июн 15, 2016 1:35:19 PM org.hibernate.validator.internal.util.Version &lt;clinit&gt;
+INFO: HV000001: Hibernate Validator 5.1.3.Final
+июн 15, 2016 1:35:19 PM org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: HHH000227: Running hbm2ddl schema export
+июн 15, 2016 1:35:19 PM org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: HHH000230: Schema export complete
+июн 15, 2016 1:35:19 PM org.springframework.orm.hibernate4.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@65ed0ba6] of Hibernate SessionFactory for HibernateTransactionManager
+июн 15, 2016 1:35:19 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (1) for test context [DefaultTestContext@3df06f97 testClass = EmployeeDaoImplTest, testInstance = com.websystique.springmvc.dao.EmployeeDaoImplTest@4e0b495e, testMethod = deleteEmployeeByInvalidSsn@EmployeeDaoImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@742e4245 testClass = EmployeeDaoImplTest, locations = &apos;{}&apos;, classes = &apos;{class com.websystique.springmvc.configuration.HibernateTestConfiguration}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]; transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@900fb9a]; rollback [true]
+</system-err>
+  </testcase>
+  <testcase time="0" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="deleteEmployeeByInvalidSsn">
+    <skipped/>
+  </testcase>
+  <testcase time="0.003" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="springTestContextBeforeTestMethod">
+    <skipped/>
+  </testcase>
+  <testcase time="0.003" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="setUp">
+    <skipped/>
+  </testcase>
+  <testcase time="0.001" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="deleteEmployeeBySsn">
+    <skipped/>
+  </testcase>
+  <testcase time="0.002" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="springTestContextBeforeTestMethod">
+    <skipped/>
+  </testcase>
+  <testcase time="0.002" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="setUp">
+    <skipped/>
+  </testcase>
+  <testcase time="0.001" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="findAllEmployees">
+    <skipped/>
+  </testcase>
+  <testcase time="0.002" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="springTestContextBeforeTestMethod">
+    <skipped/>
+  </testcase>
+  <testcase time="0.002" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="setUp">
+    <skipped/>
+  </testcase>
+  <testcase time="0.001" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="findById">
+    <skipped/>
+  </testcase>
+  <testcase time="0.002" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="springTestContextBeforeTestMethod">
+    <skipped/>
+  </testcase>
+  <testcase time="0.002" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="setUp">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="findEmployeeBySsn">
+    <skipped/>
+  </testcase>
+  <testcase time="0.002" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="springTestContextBeforeTestMethod">
+    <skipped/>
+  </testcase>
+  <testcase time="0.002" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="setUp">
+    <skipped/>
+  </testcase>
+  <testcase time="0" classname="com.websystique.springmvc.dao.EmployeeDaoImplTest" name="saveEmployee">
+    <skipped/>
+  </testcase>
+  <testcase time="0.015" classname="com.websystique.springmvc.service.EmployeeServiceImplTest" name="deleteEmployeeBySsn"/>
+  <testcase time="0" classname="com.websystique.springmvc.service.EmployeeServiceImplTest" name="findAllEmployees"/>
+  <testcase time="0" classname="com.websystique.springmvc.service.EmployeeServiceImplTest" name="findById"/>
+  <testcase time="0" classname="com.websystique.springmvc.service.EmployeeServiceImplTest" name="findEmployeeBySsn"/>
+  <testcase time="0" classname="com.websystique.springmvc.service.EmployeeServiceImplTest" name="isEmployeeSsnUnique"/>
+  <testcase time="0" classname="com.websystique.springmvc.service.EmployeeServiceImplTest" name="saveEmployee"/>
+  <testcase time="0" classname="com.websystique.springmvc.service.EmployeeServiceImplTest" name="updateEmployee"/>
+</testsuite>
